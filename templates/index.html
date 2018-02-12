@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	</head>
+	<body>
+
+		<h1>My First Heading</h1>
+		
+		<p>My first paragraph.</p>
+
+		<button onclick="enlazar()"> Enlazar </button>
+		<button onclick="desenlazar()"> Desenlazar </button>
+		<button onclick="encender()"> Encender LED </button>
+	       	<button onclick="apagar()"> Apagar LED </button>	
+	</body>
+
+	 <script>
+
+	function enlazar() {
+		$.get( "/led/enlazar", function( data ) {
+		});
+	}
+
+	function desenlazar() {
+		$.get( "/led/desenlazar", function( data ) {
+		});
+	}
+
+	function encender() {
+		$.get( "/led/encender", function( data ) {
+		});
+	}
+
+	function apagar() {
+		$.get( "/led/apagar", function( data ) {
+		});
+	}
+    $( document ).ready(function() {
+	            console.log( "document loaded" );
+		        });
+ 
+    $( window ).on( "load", function() {
+	            console.log( "window loaded" );
+		        });
+    </script>
+
+</html>
+
