@@ -6,6 +6,7 @@ import time
 
 app = Flask(__name__)
 
+## API del Led
 @app.route('/led/enlazar')
 def enlazar():
     GPIO.setmode(GPIO.BCM)
